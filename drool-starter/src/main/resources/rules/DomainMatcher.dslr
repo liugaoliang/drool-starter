@@ -1,0 +1,15 @@
+//领域标签匹配
+package com.liang.rules
+
+import com.liang.drool.TagModel
+
+expander TagProperties.dsl
+no-loop true
+
+rule "领域匹配"
+
+when
+       标签输入模型的领域是"港股"
+then
+       添加标签"港股dsl"
+end
